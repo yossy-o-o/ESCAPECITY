@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
 
+/*カメラとプレイヤーが一緒に動くコード*/
 public class PlayerManager1 : MonoBehaviour
 {
     private Rigidbody rb;
