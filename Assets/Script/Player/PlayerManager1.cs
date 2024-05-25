@@ -7,7 +7,7 @@ using UnityEngine.Scripting.APIUpdating;
 public class PlayerManager1 : MonoBehaviour
 {
     private Rigidbody rb;
-    private float speed = 5f; //プレイヤーの移動速度
+    public float speed ; //プレイヤーの移動速度
     private float inputHorizontal; //横方向
     private float inputVertical;   //縦方向
     private Vector3 cameraForward; //カメラの前方向
