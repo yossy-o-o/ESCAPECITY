@@ -1,18 +1,20 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WayPoint : MonoBehaviour
+public class Waypoints : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<Transform> points;
 
-    // Update is called once per frame
-    void Update()
+    private void OnDrawGizmos()
     {
-        
+        if (points == null || points.Count < 2)
+            return;
+
+        for (int i = 0; i < points.Count - 1; i++)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(points[i].position, points[i + 1].position);
+        }
     }
 }
+
