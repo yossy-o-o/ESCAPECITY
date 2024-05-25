@@ -10,6 +10,7 @@ public class Waypoints : MonoBehaviour
         if (points == null || points.Count < 2)
             return;
 
+        //Waypointを走るオブジェクトが初期地点に戻った際にループさせないために-1している
         for (int i = 0; i < points.Count - 1; i++)
         {
             Gizmos.color = Color.red;
