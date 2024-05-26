@@ -8,6 +8,12 @@ public class EnemyManager : MonoBehaviour
     public float turnSpeed = 2f;
     public Waypoints waypoints;
     private int currentPointIndex = 0;
+    Animation animation;
+
+    void Start()
+    {
+        animation = GetComponent<Animation>();
+    }
 
     void Update()
     {
