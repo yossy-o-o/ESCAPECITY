@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Scripting.APIUpdating;
 
 /*カメラとプレイヤーが一緒に動くコード*/
@@ -12,6 +13,8 @@ public class PlayerManager1 : MonoBehaviour
     private float inputVertical;   //縦方向
     private Vector3 cameraForward; //カメラの前方向
     private Vector3 moveForward;   //カメラの移動方向
+
+    [SerializeField] GameObject GameOverPanel;//GameOverPanelを取得
 
 
     void Start()
@@ -40,6 +43,15 @@ public class PlayerManager1 : MonoBehaviour
         if(moveForward != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(moveForward);
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Time.timeScale = 0;
+            GameOverPanel.SetActive(true);
         }
     }
 }
