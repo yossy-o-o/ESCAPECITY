@@ -10,11 +10,17 @@ public class CameraManager : MonoBehaviour
     private float mouseInputX;
     private float mouseInputY;
 
-
     void Start()
     {
         playerPos = player.transform.position;
+
+        // カメラの初期位置をプレイヤーの位置に合わせる
+        transform.position = player.transform.position + new Vector3(0, 1.6f, 0); // プレイヤーの頭の位置にカメラを配置
+
+        // カメラの向きをプレイヤーの向きに合わせる
+        transform.rotation = player.transform.rotation;
     }
+
     void Update()
     {
         //playerPos = player.transform.position;で取得した位置を
