@@ -4,6 +4,8 @@ ESCAPECITY
 - **UnityRoom:** [リンクはこちら](https://unityroom.com/games/escape_city)
 - - **itch.io:** [リンクはこちら](https://yotya.itch.io/escapecity)
 
+-Assetファイルの中の、Scriptファイルにコードが入っています。
+
 ## 概要
 昔に戻りたい！子どもの頃は～などと友人と話していた時に思いついたゲームです！
 子どもの視点に戻って、脱出するゲームです。
