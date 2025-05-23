@@ -4,7 +4,7 @@ ESCAPECITY
 - **UnityRoom:** [リンクはこちら](https://unityroom.com/games/escape_city)
 - - **itch.io:** [リンクはこちら](https://yotya.itch.io/escapecity)
  
-![ゲーム画面1](EscapeCity.png)
+![ゲーム画面1](EscapeCity1.png)
 ![ゲーム画面1](EscapeCity2.png)
 
 
